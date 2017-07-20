@@ -1,0 +1,137 @@
+.footer {
+  background-image: url("../img/footer/footer__bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+
+  &__content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    @media screen and (max-width: 992px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__logo {
+    font-size: 26px;
+    color: rgb(44, 47, 73);
+    max-width: 150px;
+    font-family: "Lato", sans-serif;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &-text {
+
+      span {
+        height: 50px;
+        color: #fff;
+        padding-top: 4px;
+        padding-left: 2px;
+        padding-right: 30px;
+        display: inline-block;
+        background-image: url(../img/footer/footer__logo.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: rgba(40, 40, 40, 0.561);
+    line-height: 1.857;
+    padding-right: 10px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 500;
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+  &__links {
+    margin-top: 10px;
+
+    a {
+      display: inline-block;
+      color: rgba(40, 40, 40, 0.659);
+      padding: 10px 0;
+      width: inherit;
+      &:hover {
+        color: rgb(40, 40, 40);
+        transition: 0.3s;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 5px 0;
+      }
+    }
+
+  }
+
+  &__form {
+    width: 100%;
+    margin-top: 20px;
+
+    &-email {
+      padding: 10px;
+      padding-left: 20px;
+      background-color: rgba(141, 141, 141, 0.1);
+      border: 1px solid rgba(78, 78, 94, 0.4);
+      border-right: none;
+      border-radius: 3px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.4);
+      width: auto;
+      outline: none;
+    }
+
+    &-submit {
+      display: inline-block;
+      border-radius: 3px;
+      border: 1px solid @subtitleColor;
+      color: #fff;
+      background-color: @subtitleColor;
+      font-size: 16px;
+      padding: 10px;
+      padding-right: 15px;
+      margin-left: -6px;
+      outline: none;
+    }
+
+  }
+
+  &__social {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 24px;
+
+    a {
+      color: rgb(204, 204, 204);
+      padding: 15px;
+      transition: 0.3s;
+      &:hover {
+        color: rgb(40, 40, 40);
+      }
+    }
+  }
+
+}

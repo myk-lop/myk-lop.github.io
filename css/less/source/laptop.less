@@ -1,0 +1,80 @@
+.laptop {
+  background-image:  url("../img/laptop/laptop__bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+
+  &__img {
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
+
+    img {
+      margin-left: -70px;
+
+      @media screen and (max-width: 1200px) {
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: 0 auto;
+      }
+    }
+
+  }
+
+  &__content {
+
+    .part__subtitle {
+      margin-top: 140px;
+      @media screen and (max-width: 1200px) {
+        margin-top: 90px;
+      }
+      @media screen and (max-width: 992px) {
+        margin-top: 40px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: -35px;
+        text-align: center;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: -35px;
+      }
+    }
+
+    .part__title {
+      @media screen and (max-width: 768px) {
+        text-align: center;
+
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 30px;
+      }
+    }
+
+    &-text {
+      margin-top: 30px;
+      @media screen and (max-width: 992px) {
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 0 20px;
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 480px) {
+        padding: 0 10px;
+      }
+    }
+  }
+
+}

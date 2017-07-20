@@ -1,0 +1,135 @@
+.sign {
+  background-color: rgb(50, 57, 105);
+
+  .part__subtitle {
+    margin-top: 100px;
+  }
+
+  .part__title {
+    color: #fff;
+  }
+
+  &__agreement {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    color: rgba(246, 245, 243, 0.6);
+    font-weight: 200;
+    
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sign__form {
+  margin-top: 90px;
+
+  &-input {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: rgba(246, 245, 243, 0.2);
+    color: #fff;
+    padding-left: 30px;
+
+    &::-webkit-input-placeholder {
+      color: #fff;
+      font-weight: 100;
+    }
+    &::-moz-placeholder {
+      color: #fff;
+      font-weight: 100;
+    }
+    /* Firefox 19+ */
+    &:-moz-placeholder {
+      color: #fff;
+      font-weight: 100;
+    }
+    /* Firefox 18- */
+    &:-ms-input-placeholder {
+      color: #fff;
+      font-weight: 100;
+    }
+  }
+
+  &-btn {
+    border: none;
+    background-color: @subtitleColor;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+}
+
+.sign__btn-wrap {
+  position: relative;
+}
+
+.btn-wrap-trial {
+  position: absolute;
+  color: rgb(246, 245, 243);
+  top: -60px;
+  img {
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn-wrap-trial {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    color: rgb(246, 245, 243);
+    img {
+      position: absolute;
+      left: 150px;
+      padding-top: 20px;
+      padding-right: 10px;
+      -moz-transform: rotate(180deg); /* Для Firefox */
+      -ms-transform: rotate(180deg); /* Для IE */
+      -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(180deg); /* Для Opera */
+      transform: rotate(180deg);
+    }
+    span {
+      display: inline-block;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sign {
+    .part__subtitle {
+      margin-top: 50px;
+    }
+    &__form {
+      margin-top: 40px;
+    }
+    .part__title {
+      font-size: 30px;
+    }
+
+    &__agreement {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
