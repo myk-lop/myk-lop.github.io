@@ -1,0 +1,76 @@
+.browser {
+  background-color: #f6f5f3;
+}
+.browser__content {
+  text-align: center;
+}
+.browser__content .part__subtitle {
+  margin-top: 110px;
+}
+@media screen and (max-width: 1200px) {
+  .browser__content .part__subtitle {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .browser__content .part__subtitle {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .browser__content .part__title {
+    font-size: 30px;
+  }
+}
+.browser__content-text {
+  margin-top: 50px;
+  padding: 0 250px;
+}
+@media screen and (max-width: 1200px) {
+  .browser__content-text {
+    padding: 0 100px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .browser__content-text {
+    padding: 0 100px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .browser__content-text {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .browser__content-text {
+    padding: 0 10px;
+  }
+}
+.browser__content-img {
+  margin-top: 110px;
+}
+@media screen and (max-width: 1200px) {
+  .browser__content-img {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .browser__content-img {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .browser__content-img {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .browser__content-img {
+    margin-top: 20px;
+  }
+}
+.browser__content-img img {
+  margin: 0 auto;
+}

@@ -1,0 +1,140 @@
+body {
+  font-family: "Exo";
+}
+.header {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(https://thenewcode.com/assets/images/polina.jpg) no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+  opacity: .5;
+}
+#vid__controls {
+  margin: 170px auto 150px;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  #vid__controls {
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #vid__controls {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
+#vid__controls h1 {
+  font: 100 60px/1.25 "Exo";
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: .3rem;
+  width: 65%;
+}
+@media screen and (max-width: 1200px) {
+  #vid__controls h1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #vid__controls h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #vid__controls h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #vid__controls h1 {
+    font-size: 32px;
+  }
+}
+#vid__controls .button-wrap {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+#vid__controls button {
+  background: none;
+  border: none;
+  font-size: 60px;
+  cursor: pointer;
+  margin: 30px 0;
+  outline: 0;
+}
+#vid__controls button:hover {
+  color: #282828;
+  transition: .7s;
+}
+#vid__controls .header__link-wrap {
+  margin: 0 auto;
+  width: 200px;
+}
+@media screen and (max-width: 768px) {
+  #vid__controls .header__link-wrap {
+    margin-top: 70px;
+  }
+}
+#vid__controls a {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding-top: 15px;
+  font: 300 16px "Exo";
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #ff6d6d;
+  transition: .6s background;
+}
+@media screen and (max-width: 768px) {
+  #vid__controls a {
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+  }
+}
+#vid__controls a:hover {
+  background: #ff956d;
+}
+#vid__controls .header__link-footer {
+  font-size: 14px;
+  opacity: 0.6;
+  line-height: 5.357;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background: url(https://thenewcode.com/assets/images/polina.jpg) #000000 no-repeat center center;
+    background-size: cover;
+  }
+  .button-wrap {
+    display: none;
+  }
+  #bgvid {
+    display: none;
+  }
+}
