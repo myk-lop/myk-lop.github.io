@@ -1,0 +1,133 @@
+/*HAPPY CLIENTS*/
+.clients__bg {
+  background: url(../img/clients/clients__bg.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.clients {
+  margin-bottom: 120px;
+}
+@media (max-width: 1200px) {
+  .clients {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 992px) {
+  .clients {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .clients {
+    margin-bottom: 30px;
+  }
+}
+.clients__item {
+  margin-top: 80px;
+}
+@media (max-width: 1200px) {
+  .clients__item {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .clients__item {
+    margin-top: 40px;
+  }
+}
+.clients__item-img {
+  float: left;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+@media (max-width: 1200px) {
+  .clients__item-img {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .clients__item-img img {
+    height: 55px;
+    width: 55px;
+  }
+}
+.clients__item-content {
+  margin-left: 150px;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .clients__item-content {
+    margin-left: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .clients__item-content {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .clients__item-content {
+    margin-left: 60px;
+  }
+}
+.clients__item-name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.clients__item-position {
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #333333;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 100;
+}
+@media (max-width: 992px) {
+  .clients__item-position {
+    margin-top: 5px;
+  }
+}
+.clients__item-line {
+  margin-top: 15px;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+  content: "";
+}
+@media (max-width: 992px) {
+  .clients__item-line {
+    margin-top: 5px;
+  }
+}
+.clients__item-text {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  line-height: 1.6;
+  padding-right: 20px;
+}
+@media (max-width: 1200px) {
+  .clients__item-text {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .clients__item-text {
+    margin-top: 10px;
+    padding-right: 0;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 480px) {
+  .clients__item-text {
+    margin-left: -60px;
+  }
+}
+/*end of HAPPY CLIENTS*/

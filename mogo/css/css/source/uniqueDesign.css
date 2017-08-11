@@ -1,0 +1,51 @@
+/*UNIQUE DESIGN*/
+.design__bg {
+  background: url(../img/design/design__bg.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.design__img {
+  position: relative;
+  margin-top: 10px;
+}
+.design__img-tablet {
+  margin-left: 23%;
+}
+@media (max-width: 992px) {
+  .design__img-tablet {
+    margin: 0 auto;
+  }
+}
+.design__img-phone {
+  position: absolute;
+  top: 235px;
+  right: 195px;
+}
+@media (max-width: 1200px) {
+  .design__img-phone {
+    left: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .design__img-phone {
+    max-height: 450px;
+  }
+}
+@media (max-width: 550px) {
+  .design__img-phone {
+    top: 50%;
+    max-height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .design__img-phone {
+    max-height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .design__img-phone {
+    left: 50%;
+  }
+}
+/*UNIQUE DESIGN END*/

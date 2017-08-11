@@ -1,0 +1,241 @@
+/*Our team*/
+.team__content {
+  margin-top: 100px;
+}
+@media (max-width: 992px) {
+  .team__content {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .team__content {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+.team__element-wrap {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .team__element-wrap {
+    margin-top: 20px;
+    display: inline-block;
+  }
+}
+.team__element-wrap:hover .team__element-item {
+  top: -5px;
+  left: -5px;
+}
+.team__element-wrap:hover .team__element-bg {
+  top: 5px;
+  left: 5px;
+}
+.team__element-item {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.team__element-bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: #95e1d3;
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+}
+.team__element {
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .team__element {
+    max-width: 250px;
+  }
+}
+.team__image img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+.team__image-mask {
+  position: absolute;
+  max-width: 380px;
+  width: 100%;
+  max-height: 450px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.team__mask-content {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+}
+.display-first img {
+  transition: all 0.2s linear;
+}
+.display-first .team__image-mask {
+  opacity: 0;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0, rgba(234, 210, 131, 0.7)), color-stop(1, rgba(229, 125, 126, 0.7)));
+  transition: all 0.3s ease-in-out;
+}
+.display-first .team__mask-content {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.display-first:hover .team__image-mask,
+.display-first:hover .team__image {
+  opacity: 1;
+  transition: 0.3s;
+}
+.display-first:hover .team__mask-content {
+  opacity: 1;
+  transform: translateY(180px);
+}
+@media screen and (max-width: 1200px) {
+  .display-first:hover .team__mask-content {
+    transform: translateY(150px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .display-first:hover .team__mask-content {
+    transform: translateY(100px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .display-first:hover .team__mask-content {
+    transform: translateY(120px);
+  }
+}
+/*social icons part*/
+.mask__social {
+  font-size: 0;
+}
+.mask__social-item {
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  display: inline-block;
+  margin-right: 1px;
+  font-size: 28px;
+  color: #f38181;
+}
+@media screen and (max-width: 992px) {
+  .mask__social-item {
+    width: 45px;
+    height: 45px;
+  }
+}
+.mask__social-item i {
+  padding-top: 15px;
+}
+@media screen and (max-width: 992px) {
+  .mask__social-item i {
+    padding-top: 10px;
+  }
+}
+.mask__social-item:hover {
+  background-color: #f38181;
+  color: #ffffff;
+  transition: 0.3s;
+}
+/*social icon part end*/
+/*team text part*/
+.team__member-name,
+.team__member-position {
+  margin: 0 auto;
+  text-align: center;
+}
+.team__member-name {
+  margin-top: 30px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+  .team__member-name {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__member-name {
+    margin-top: 10px;
+  }
+}
+.team__member-position {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+}
+@media screen and (max-width: 992px) {
+  .team__member-position {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__member-position {
+    margin-top: 0;
+  }
+}
+/*end of team part*/
+/*label*/
+.label__bg {
+  margin-top: 120px;
+  background-color: #f8f8f8;
+}
+@media (max-width: 1200px) {
+  .label__bg {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .label__bg {
+    margin-top: 50px;
+  }
+}
+.label__img {
+  width: 150px;
+  height: 150px;
+  margin: 50px 0;
+}
+@media (max-width: 1200px) {
+  .label__img {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 992px) {
+  .label__img {
+    margin: 30px 0;
+  }
+}
+@media (max-width: 768px) {
+  .label__img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 360px) {
+  .label__img {
+    margin: 20px 0;
+  }
+}
+/*end of label*/
