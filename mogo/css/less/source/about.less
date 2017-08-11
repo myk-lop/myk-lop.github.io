@@ -1,0 +1,270 @@
+/*ABOUT*/
+
+/*Title-repeats*/
+
+.part__title {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.part__title-topic {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 100px;
+  @media screen and (max-width: 992px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+
+.part__title-content {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 20px;
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+.part__title-footer {
+  background-color: rgb(243, 129, 129);
+  height: 3px;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 40px;
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+}
+
+.part__title-text {
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+}
+
+/*End of repeating title*/
+
+.about__content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: 992px) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/*about__image-ANIMATION*/
+
+.about__element-wrap {
+  position: relative;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  @media (max-width: 480px) {
+    margin-top: 10px;
+  }
+}
+
+.about__element {
+  max-width: 380px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.about__image img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+
+.about__element-wrap:hover .about__element-item {
+  top: -5px;
+  left: -5px;
+}
+
+.about__element-wrap:hover .about__element-bg {
+  top: 5px;
+  left: 5px;
+}
+
+.about__element-item {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.about__element-bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: rgb(149, 225, 211);
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+}
+
+.about__image-mask {
+  position: absolute;
+  max-width: 380px;
+  width: 100%;
+  max-height: 250px;
+  height: 100%;
+  top: 0;
+  left: 0
+}
+
+.mask__text {
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.mask__text img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.view-first img {
+  transition: all 0.2s linear;
+}
+
+.view-first .about__image-mask {
+  opacity: 0;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0, rgba(234, 210, 131, 0.7)), color-stop(1, rgba(229, 125, 126, 0.7)));
+  transition: all 0.3s ease-in-out;
+}
+
+.view-first .mask__text {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover .about__image-mask,
+.view-first:hover .about__image {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.view-first:hover .mask__text {
+  opacity: 1;
+  transform: translateY(100%);
+  @media screen and (max-width: 992px) {
+    transform: translateY(50%);
+  }
+  @media screen and (max-width: 768px) {
+    transform: translateY(120%);
+  }
+  @media screen and (max-width: 480px) {
+    transform: translateY(100%);
+  }
+}
+
+/*animation ends*/
+
+/*about numbers*/
+
+.bg__about {
+  background-color: rgb(149, 225, 211);
+}
+
+.about__counter {
+  width: 20%;
+  height: 270px;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  @media screen and (max-width: 992px) {
+    height: 190px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 150px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 110px;
+  }
+
+}
+
+.about__counter:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.about__counter-num {
+  font-size: 72px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-top: 80px;
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+    padding-top: 20px;
+  }
+}
+
+.about__counter-text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-top: 15px;
+  @media screen and (max-width: 768px) {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+}
+
+/*about numbers end*/
+/*ABOUT ENDS*/

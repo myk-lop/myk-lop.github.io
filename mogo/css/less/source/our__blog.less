@@ -1,0 +1,208 @@
+/*OUR BLOG*/
+
+.blog__content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+.blog__element {
+  display: inline-block;
+  max-width: 380px;
+  width: 100%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.blog__element:last-child {
+  margin-right: 0;
+}
+
+.blog__image {
+  position: relative;
+}
+
+.blog__image img{
+  max-width: 100%;
+}
+
+.blog__calendar {
+  width: 60px;
+  height: 70px;
+  background-color: rgb(149, 225, 211);
+  position: absolute;
+  bottom: 5%;
+  left: -10px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding: 15px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.blog__calendar-month {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+.blog__element-title {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  font-weight: 500;
+  @media (max-width: 992px) {
+    margin-top: 10px;
+  }
+}
+
+.blog__element-content {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+  height: 45px;
+  overflow: hidden;
+}
+
+.blog__footer {
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+  margin-top: 15px;
+}
+
+.blog__feedback {
+  margin-top: 20px;
+  text-align: left;
+  @media (max-width: 992px) {
+    margin-top: 5px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.blog__feedback-container {
+  display: inline-block;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.blog__element:hover .blog__footer {
+  background-color: rgb(243, 129, 129);
+  transition: 0.4s;
+}
+
+/*end of OUR BLOG*/
+//id="googleMap"
+/*MAP*/
+
+.map__bg {
+  background: url(../img/map/map.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  margin-top: 120px;
+  text-align: center;
+  z-index: 2;
+  @media (max-width: 1200px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 992px) {
+    margin-top: 70px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 30px;
+  }
+
+
+}
+
+.map__cover-pointer {
+  display: inline-block;
+  text-align: center;
+  color: rgb(243, 129, 129);
+  position: absolute;
+  width: 150px;
+  margin-left: -75px;
+  margin-top: 75px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.map__cover-pointer-hide {
+  z-index: 0;
+}
+
+
+
+.map__icon {
+  font-size: 26px;
+}
+
+.map__title {
+  display: inline-block;
+  font-size: 26px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.map__footer {
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin: 0 auto;
+}
+
+.map__cover-pointer:hover {
+  color: rgb(243, 100, 100);
+}
+
+
+
+.map__on {
+  //visibility: hidden;
+  margin-top: 120px;
+  width: 100%;
+  position: relative;
+  height: 250px;
+  z-index: 1;
+  @media (max-width: 1200px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 992px) {
+    margin-top: 70px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 30px;
+  }
+}
+
+/*end of MAP*/
