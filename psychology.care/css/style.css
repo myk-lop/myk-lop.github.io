@@ -347,6 +347,9 @@ input[type=button] {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+.header__logo-img a {
+  display: inline-block;
+}
 @media (max-width: 768px) {
   .header__logo-img {
     padding: 20px 0;
@@ -664,6 +667,7 @@ input[type=button] {
   background-image: url("../img/main1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .main__item-title {
   font-size: 48px;
