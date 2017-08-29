@@ -7,7 +7,7 @@ $(document).ready(function () {
         items: 1,
         mouseDrag: true,
         touchDrag: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
         responsive: {
